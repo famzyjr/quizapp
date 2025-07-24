@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <div class="quiz-container">
+    <div class="quiz-card">
+      <div id="error">
+        <div class="Category">
+          <h4 id="Category">Category:</h4>
+          <p id="totalQuestions"></p>
+          <h2 id="question" class="question">Loading question...</h2>
+
+        </div>
+      </div>
+
+      <div id="options" class="options">
+        <button class="option"></button>
+        <button class="option"></button>
+        <button class="option"></button>
+        <button class="option"></button>
+      </div>
+      <div class="footer">
+        <button id="nextBtn" style="display: none;" class="next-btn">Next</button>
+        <div id="progressBarContainer"
+          style="width: 100%; background-color: #eee; border-radius: 10px; height: 20px; margin-bottom: 10px;">
+          <div id="progressBar" style="height: 100%; width: 0%; background-color: #4caf50; border-radius: 10px;"></div>
+        </div>
+      </div>
+    </div>
+    <div id="scoreContainer" class='scoreContainer' >0</div>
+  </div>
+  <script src="./Math.js"></script>
+</body>
+
+</html>
